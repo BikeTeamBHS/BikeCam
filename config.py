@@ -28,13 +28,13 @@ left = (128, 256)
 far_left = (0, 128)
 
 # How long a range needs to be active to trigger.
-threshold = 8
+threshold = 2
 
 # How big an object needs to appear
 scale = 60
 
 # How often we clear the ranges.
-duration = 16
+duration = 10
 
 # Classes to acknowledge
 detections = [
@@ -51,4 +51,4 @@ rpi = False
 
 if rpi:
     # LED config, assign GPIO pins
-    pins = [LED(16), LED(17),  LED(18),  LED(19),  LED(20)]
+    pins = [LED(22), LED(27),  LED(17),  LED(23),  LED(24)]
