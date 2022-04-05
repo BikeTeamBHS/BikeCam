@@ -219,11 +219,13 @@ while True:
 
         # Activate LEDs
         if rpi:
+            counter = 0
             for led in leds:
                 if led > threshold:
-                    pins[leds.index(led)].on()
+                    pins[counter].on()
                 else:
-                    pins[leds.index(led)].off()
+                    pins[counter].off()
+                counter += 1
         leds = [0, 0, 0, 0, 0]
 # Clean up
 cv2.destroyAllWindows()
